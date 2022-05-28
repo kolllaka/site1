@@ -45,3 +45,25 @@ function fixedNav() {
 	}
 }
 window.addEventListener('scroll', fixedNav)
+
+// Accardeon
+function accardeon() {
+	const acardeon = document.querySelector('.acardeon')
+	const acardeontitles = document.querySelectorAll('.acardeon__title')
+
+	acardeontitles.forEach((acardeontitle, index) => {
+		acardeontitle.addEventListener('click', e => {
+			e.preventDefault();
+
+			const acardeoncontent = acardeontitle.closest('.acardeon__item').querySelector('.acardeon__content')
+			if (!acardeontitle.classList.contains('active')) {
+				acardeontitle.classList.add('active')
+				acardeoncontent.classList.add('active')
+			} else {
+				acardeontitle.classList.remove('active')
+				acardeoncontent.classList.remove('active')
+			}
+		});
+	});
+};
+accardeon()
