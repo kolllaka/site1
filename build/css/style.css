@@ -468,6 +468,10 @@ a:active {
   display: flex;
 }
 
+.features__btn {
+  outline: none;
+}
+
 .cart {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -864,6 +868,72 @@ a:active {
           transform: translate(100%, -50%);
 }
 
+.learnmore {
+  background-color: #031E3E;
+}
+
+.learnmore__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.learnmore__row {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.learnmore__row-img img {
+  padding-top: 76px;
+  margin-left: -20px;
+}
+
+.learnmore__row-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 60px 75px 60px 60px;
+}
+
+.contentlearnmore__icon {
+  margin-bottom: 24px;
+}
+
+.contentlearnmore__title {
+  margin-bottom: 24px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 110%;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+}
+
+.contentlearnmore__text {
+  margin-bottom: 32px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 145%;
+  color: #AAC0E0;
+}
+
+.contentlearnmore__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contentlearnmore__btn {
+  outline: none;
+}
+
 @media (max-width: 1339.98px) {
   .container {
     max-width: 1370px;
@@ -968,6 +1038,35 @@ a:active {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 47%;
             flex: 0 1 47%;
+  }
+
+  .learnmore__body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .learnmore__row {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+
+  .learnmore__row-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .learnmore__row-img img {
+    padding-top: 20px;
+    margin-left: 0;
+  }
+
+  .learnmore__row-img img {
+    width: 100%;
   }
 }
 
@@ -1180,8 +1279,12 @@ a:active {
     padding: 20px 12px 20px;
   }
 
-  .bodyitempricing__info {
-    display: none;
+  .learnmore__row-content {
+    padding: 50px 20px;
+  }
+
+  .contentlearnmore__btn {
+    width: 100%;
   }
 }
 
