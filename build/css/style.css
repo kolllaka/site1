@@ -642,6 +642,10 @@ a:active {
             flex-direction: column;
   }
 
+  .burger__menu {
+    margin-top: 50px;
+  }
+
   .mainscreen__bg img {
     opacity: 0.8;
   }
