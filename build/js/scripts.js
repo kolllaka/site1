@@ -66,4 +66,29 @@ function accardeon() {
 		});
 	});
 };
-accardeon()
+accardeon();
+
+// switch
+function myswitch() {
+	const myswitches = document.querySelectorAll('.switch');
+
+	myswitches.forEach((myswitch, index) => {
+		const switchbtn = myswitch.querySelector('.switch__btn');
+		const switchright = myswitch.querySelector('.switch__right')
+		const switchleft = myswitch.querySelector('.switch__left')
+
+		switchbtn.addEventListener('click', e => {
+			e.preventDefault();
+
+			if (!switchbtn.classList.contains('active')) {
+				switchbtn.classList.add('active')
+			} else {
+				switchbtn.classList.remove('active')
+			};
+
+			switchleft.classList.toggle('toggle')
+			switchright.classList.toggle('toggle')
+		});
+	});
+};
+myswitch();
