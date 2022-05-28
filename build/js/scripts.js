@@ -49,18 +49,18 @@ window.addEventListener('scroll', fixedNav)
 // Accardeon
 function accardeon() {
 	const acardeon = document.querySelector('.acardeon')
-	const acardeontitles = document.querySelectorAll('.acardeon__title')
+	const acardeonbtns = document.querySelectorAll('.acardeon__btn')
 
-	acardeontitles.forEach((acardeontitle, index) => {
-		acardeontitle.addEventListener('click', e => {
+	acardeonbtns.forEach((acardeonbtn, index) => {
+		acardeonbtn.addEventListener('click', e => {
 			e.preventDefault();
 
-			const acardeoncontent = acardeontitle.closest('.acardeon__item').querySelector('.acardeon__content')
-			if (!acardeontitle.classList.contains('active')) {
-				acardeontitle.classList.add('active')
+			const acardeoncontent = acardeonbtn.closest('.acardeon__item').querySelector('.acardeon__content')
+			if (!acardeonbtn.classList.contains('active')) {
+				acardeonbtn.classList.add('active')
 				acardeoncontent.classList.add('active')
 			} else {
-				acardeontitle.classList.remove('active')
+				acardeonbtn.classList.remove('active')
 				acardeoncontent.classList.remove('active')
 			}
 		});
