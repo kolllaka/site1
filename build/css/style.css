@@ -756,16 +756,16 @@ a:active {
   right: -14px;
 }
 
-.itempricing__flag picture {
+.itempricing__flag picture img {
   position: relative;
 }
 
 .itempricing__flag picture span {
   position: absolute;
-  bottom: 100%;
-  -webkit-transform: translateY(-10%);
-      -ms-transform: translateY(-10%);
-          transform: translateY(-10%);
+  bottom: 0%;
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
   left: 0;
   padding: 10px 12px;
   font-weight: 700;
