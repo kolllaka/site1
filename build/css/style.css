@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo:regular,500,700,900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -72,6 +74,109 @@ h6 {
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: #001731;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 110%;
+  letter-spacing: -0.03em;
+}
+
+.text {
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+.itemtext__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: #398BFF;
+}
+
+.itemtext__subtitle {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 125%;
+  letter-spacing: 0.01em;
+  color: #F04747;
+}
+
+.itemtext__subcost {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 125%;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #F04747;
+}
+
+.itemtext__cost {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 125%;
+  color: #001731;
+}
+
+.itemtext__term {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 125%;
+  letter-spacing: -0.03em;
+  color: rgba(0, 23, 49, 0.55);
+}
+
+.itemtext__desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.01em;
+  color: #6A6A6A;
+}
+
+.itemtext__rowitem {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 125%;
+  color: rgba(0, 23, 49, 0.55);
+}
+
+.itempricing-dark .itemtext__subtitle {
+  color: #FFFFFF;
+}
+
+.itempricing-dark .itemtext__cost {
+  color: #FFFFFF;
+}
+
+.itempricing-dark .itemtext__term {
+  color: #FBFCFF;
+}
+
+.itempricing-dark .itemtext__desc {
+  color: #FFFFFF;
+}
+
+.itempricing-dark .itemtext__rowitem {
+  color: #FFFFFF;
+}
+
 .container {
   max-width: 1320px;
   width: 100%;
@@ -80,7 +185,6 @@ h6 {
 }
 
 body {
-  font-family: "Gilroy", sans-serif;
   position: relative;
 }
 
@@ -164,26 +268,6 @@ a:active {
 
 .acardeon__content.active {
   display: block;
-}
-
-.title {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 110%;
-  letter-spacing: -0.03em;
-  color: #001731;
-}
-
-.text {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 175%;
-  color: #001731;
-  opacity: 0.75;
 }
 
 .header {
@@ -678,17 +762,15 @@ a:active {
 
 .itempricing__flag picture span {
   position: absolute;
-  top: 100%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  bottom: 100%;
+  -webkit-transform: translateY(-10%);
+      -ms-transform: translateY(-10%);
+          transform: translateY(-10%);
   left: 0;
   padding: 10px 12px;
-  font-family: "Gilroy";
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 125%;
   text-transform: uppercase;
   color: #FFFFFF;
 }
@@ -704,27 +786,10 @@ a:active {
           align-items: center;
 }
 
-.itempricing__titletext {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 25px;
-  letter-spacing: 0.02em;
-  color: #398BFF;
-}
-
 .itempricing__offer {
   padding: 4.5px 12px;
   background: rgba(240, 71, 71, 0.1);
   border-radius: 4px;
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-  letter-spacing: 0.01em;
-  color: #F04747;
 }
 
 .itempricing__description {
@@ -746,30 +811,6 @@ a:active {
 
 .itempricing__row:not(:last-child) {
   margin-bottom: 8px;
-}
-
-.itempricing__discount {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
-  -webkit-font-feature-settings: "tnum" on, "lnum" on;
-          font-feature-settings: "tnum" on, "lnum" on;
-  color: #F04747;
-}
-
-.itempricing__price {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
-  -webkit-font-feature-settings: "tnum" on, "lnum" on;
-          font-feature-settings: "tnum" on, "lnum" on;
-  color: #001731;
 }
 
 .itempricing__buttons {
@@ -821,14 +862,6 @@ a:active {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 25px;
-  -webkit-font-feature-settings: "tnum" on, "lnum" on;
-          font-feature-settings: "tnum" on, "lnum" on;
-  color: rgba(0, 23, 49, 0.55);
 }
 
 .bodyitempricing__info {
@@ -854,7 +887,6 @@ a:active {
 }
 
 .info__text {
-  z-index: 10000;
   display: none;
   position: absolute;
   top: 100%;
@@ -865,6 +897,7 @@ a:active {
   background-color: #fff;
   border: 1px solid #E5E5E5;
   border-radius: 8px;
+  color: #000;
 }
 
 .itempricing-dark {
@@ -951,9 +984,11 @@ a:active {
   height: 20px;
   border-radius: 50%;
   background-color: #fff;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  -o-transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
 }
 
 .switch__btn.active span::after {
@@ -1360,6 +1395,9 @@ a:active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 24px;
 }
 
