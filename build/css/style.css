@@ -665,13 +665,6 @@ a:active {
   position: relative;
 }
 
-.itempricing-dark {
-  background: #031E3E;
-  -webkit-box-shadow: 0px 4px 50px rgba(57, 139, 255, 0.3);
-          box-shadow: 0px 4px 50px rgba(57, 139, 255, 0.3);
-  border-radius: 12px;
-}
-
 .itempricing__flag {
   position: absolute;
   display: block;
@@ -732,11 +725,6 @@ a:active {
   line-height: 16px;
   letter-spacing: 0.01em;
   color: #F04747;
-}
-
-.itempricing__offer-dark {
-  background: none;
-  border: 1.5px solid #FFFFFF;
 }
 
 .itempricing__description {
@@ -824,10 +812,6 @@ a:active {
   border-radius: 4px;
 }
 
-.bodyitempricing__icon-dark {
-  background: rgba(247, 251, 255, 0.1);
-}
-
 .bodyitempricing__icon img {
   border-radius: 4px;
 }
@@ -848,27 +832,59 @@ a:active {
 }
 
 .bodyitempricing__info {
-  background: url("../img/pricing/icons/info.svg") no-repeat;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: 0;
+  width: 24px;
+  height: 24px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 20px;
-          flex: 0 0 20px;
-  width: 20px;
-  height: 20px;
+      -ms-flex: 0 0 24px;
+          flex: 0 0 24px;
+}
+
+.info__icon {
   cursor: pointer;
+  display: block;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/pricing/icons/info-gray.svg");
 }
 
-.bodyitempricing__info-dark {
-  background: url("../img/pricing/icons/info-gray.svg") no-repeat;
+.info__icon:hover .info__text {
+  display: block;
 }
 
-.bodyitempricing__info span {
+.info__text {
+  z-index: 10000;
   display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  padding: 10px;
+  width: 300px;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #E5E5E5;
+  border-radius: 8px;
+}
+
+.itempricing-dark {
+  background: #031E3E;
+  -webkit-box-shadow: 0px 4px 50px rgba(57, 139, 255, 0.3);
+          box-shadow: 0px 4px 50px rgba(57, 139, 255, 0.3);
+  border-radius: 12px;
+}
+
+.itempricing-dark .itempricing__offer {
+  background: none;
+  border: 1.5px solid #FFFFFF;
+}
+
+.itempricing-dark .bodyitempricing__icon {
+  background: rgba(247, 251, 255, 0.1);
+}
+
+.itempricing-dark .info__icon {
+  background-image: url("../img/pricing/icons/info.svg");
 }
 
 .switch {
