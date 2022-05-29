@@ -1917,5 +1917,14 @@ a:active {
 
   .navbarfooter {
     gap: 20px;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .subsfooter {
+    max-width: none;
+    width: 100%;
   }
 }
