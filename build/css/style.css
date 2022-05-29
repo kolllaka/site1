@@ -863,6 +863,10 @@ a:active {
   cursor: pointer;
 }
 
+.bodyitempricing__info-dark {
+  background: url("../img/pricing/icons/info-gray.svg") no-repeat;
+}
+
 .bodyitempricing__info span {
   display: none;
 }
