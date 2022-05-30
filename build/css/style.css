@@ -1692,7 +1692,7 @@ a:active {
   .footer__top {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 20px;
+    gap: 35px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
