@@ -1967,6 +1967,10 @@ a:active {
     gap: 10px;
   }
 
+  .footer__licence {
+    margin-top: 20px;
+  }
+
   .footer__links {
     width: 100%;
     -webkit-box-pack: center;
@@ -2065,6 +2069,13 @@ a:active {
 
   .question__titletext {
     font-size: 16px;
+  }
+
+  .footer__links {
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 20px;
   }
 
   .navbarfooter {
